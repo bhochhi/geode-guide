@@ -1,7 +1,15 @@
-Geode Running in docker container
+Hello-World Geode in 5 Mins: Just in memory caching.
 ---
-    - docker run -it -p 10334:10334 -p 7575:7575 -p 1099:1099 -p 40404:40404 apachegeode/geode gfsh
-    - gfsh> start locator
-    - gfsh> start server
-    - gfsh> create region --name=hello --type=REPLICATE 
-    
+- Gradle simple app
+- Only geode-core as dependency
+- No geode server/instance required
+- ```gradle clean build run```
+
+
+
+
+Resources:
+1. https://cwiki.apache.org/confluence/display/GEODE
+2. http://geode.apache.org/docs/guide/17/about_geode.html
+
+

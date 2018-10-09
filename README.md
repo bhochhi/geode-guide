@@ -1,12 +1,4 @@
-Hello-World Geode in 5 Mins: Just in memory caching.
----
-- Gradle simple app
-- Only geode-core as dependency
-- No geode server/instance required
-- ```gradle clean build run```
-
-
-
+### checkout branches for various examples. Also checkout [wiki](https://github.com/bhochhi/geode-guide/wiki) for corresponding concepts and explanation on examples in each branch.
 
 Resources:
 1. https://cwiki.apache.org/confluence/display/GEODE

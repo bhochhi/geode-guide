@@ -1,15 +1,1 @@
-Hello-World Geode in 5 Mins: Just in memory caching.
----
-- Gradle simple app
-- Only geode-core as dependency
-- No geode server/instance required
-- ```gradle clean build run```
-
-
-
-
-Resources:
-1. https://cwiki.apache.org/confluence/display/GEODE
-2. http://geode.apache.org/docs/guide/17/about_geode.html
-
-
+- Those scripts are reference and inspired from [lshannon/geode-aws-deployment-scripts](https://github.com/lshannon/geode-aws-deployment-scripts/blob/master/local_scripts/)

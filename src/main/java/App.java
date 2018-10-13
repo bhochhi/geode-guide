@@ -22,13 +22,13 @@ public class App {
 
         //Create and return a client region factory that is initialized to create a region using the given predefined region attributes.
         // ClientRegionShortcut.PROXY:A PROXY region has no local state and forwards all operations to a server. Read all other options.
-        Region<String, String> region = cache.<String, String>createClientRegionFactory(ClientRegionShortcut.CACHING_PROXY).create("hello");
+        Region<String, String> region = cache.<String, String>creatceClientRegionFactory(ClientRegionShortcut.CACHING_PROXY).create("hello");
 
         //TASK 1:   create region and put some values to server
         System.out.println("TASK 1:   create region and put some values to server");
         //Places a new value into an entry in this region with the specified key.
-//        region.put("11", "Hello from second app");
-//        region.put("22", "World from second app");
+        region.put("11", "Hello from second app");
+        region.put("22", "World from second app");
 
         System.out.format("region size %s\n",region.size());
         //Returns the <code>Set</code> of <code>Region.Entry</code> objects in this region.

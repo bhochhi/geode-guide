@@ -1,5 +1,4 @@
-#!/usr/local/bin/zsh
-## referred from https://github.com/lshannon/geode-aws-deployment-scripts/blob/master/local_scripts/
+#!/bin/bash
 ##############################################################################
 # Runs locally using `gfsh` to start Geode processes (1 Locators, 2 Servers)
 ##############################################################################

@@ -1,6 +1,4 @@
-#!/usr/bin/env zsh
-
-# referred from https://github.com/lshannon/geode-aws-deployment-scripts/blob/master/local_scripts/
+#!/bin/bash
 #######################################################################
 # Runs locally to set up environment to use `gfsh` to run locally
 #######################################################################
@@ -8,10 +6,15 @@ cd $( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
 if [ -n "$JAVA_HOME" ]; then
   export HOST=localhost
-  export SERVER_DIR_LOCATION=./geode
+  export GEMFIRE=../geode-ubuntu-package/apache-geode
+  export GF_JAVA=$JAVA_HOME/bin/java
+  export LIB_DIR=$GEMFIRE_WORKING/lib
+  export SERVER_DIR_LOCATION=./
   export LOCATOR="locator";
   export LOCATOR_IP=127.0.0.1
   export LOCATOR_PORT=10334
+  export PATH=$PATH:$JAVA_HOME/bin:$GEMFIRE/bin
+  export CLASSPATH=$CLASSPATH:$LIB_DIR/*
   export SERVER_HOST=$HOST
 else
 	echo "This requires the Java JDK and JAVA_HOME to be set"

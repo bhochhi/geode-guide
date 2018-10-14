@@ -1,5 +1,4 @@
-#!/usr/local/bin/zsh
-# referred from https://github.com/lshannon/geode-aws-deployment-scripts/blob/master/local_scripts/
+#!/bin/bash
 #######################################################################
 # Runs locally to Stop and clean up a locally running Geode cluster
 #######################################################################

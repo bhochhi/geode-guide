@@ -6,10 +6,10 @@ cd $( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
 if [ -n "$JAVA_HOME" ]; then
   export HOST=localhost
-  export GEMFIRE=../geode-ubuntu-package/apache-geode
+#  export GEMFIRE=../geode-ubuntu-package/apache-geode
   export GF_JAVA=$JAVA_HOME/bin/java
-  export LIB_DIR=$GEMFIRE_WORKING/lib
-  export SERVER_DIR_LOCATION=./
+#  export LIB_DIR=$GEMFIRE_WORKING/lib
+  export SERVER_DIR_LOCATION=~/geode-server/
   export LOCATOR="locator";
   export LOCATOR_IP=127.0.0.1
   export LOCATOR_PORT=10334

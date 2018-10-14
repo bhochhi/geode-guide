@@ -41,7 +41,6 @@ public class App {
 
         // Identify your query string.
         String queryString = "SELECT * FROM /hello";
-
         // Get QueryService from Cache.
         QueryService queryService = cache.getQueryService();
 

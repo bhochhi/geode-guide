@@ -61,7 +61,12 @@ echo "Started Server $NAME"
 #Close the server start loop
 done
 
+
 #Connect to `gfsh` locally and get the members
-gfsh -e connect -e "list members"
+gfsh -e connect -e "list members" -e "start pulse"
+
+#Create the default region
+echo "Creating hello region"
+gfsh  -e connect -e "create region --name=hello --type=REPLICATE"
 
 echo "Local Cluster started"
